@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antoine Siebert, Ph.D. | Engineer </title>
+  <title>Antoine Siebert – Télécoms & IA</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
@@ -21,19 +21,28 @@
       background: rgba(0, 0, 0, 0.8);
       padding: 10px 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       z-index: 100;
     }
-    header .logo {
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px; /* Ajuste la largeur du header */
+      align-items: center;
+    }
+    .logo {
       display: flex;
       align-items: center;
     }
-    header .logo img {
+    .logo img {
       width: 40px;
+      height: 40px;
+      border-radius: 50%; /* Rendre l'image circulaire */
       margin-right: 10px;
     }
-    header .logo h1 {
+    .logo h1 {
       font-size: 1.5rem;
       margin: 0;
       color: #00ffcc;
@@ -78,17 +87,19 @@
 <body>
 
   <header>
-    <div class="logo">
-      <!-- Remplacer "logo.png" par le nom de ton fichier logo -->
-      <img src="logo.png" alt="Logo">
-      <h1>Antoine Siebert</h1>
+    <div class="header-container">
+      <div class="logo">
+        <!-- Remplacer "logo.png" par ton image de logo -->
+        <img src="logo.png" alt="Logo">
+        <h1>Antoine Siebert</h1>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#publications">Publications</a>
-    </nav>
   </header>
 
   <section id="home">
