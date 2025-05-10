@@ -3,82 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Antoine Siebert – Télécoms & IA</title>
+  <title>Antoine Siebert, Ph.D. | Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --pink: #CE8F8A;
+      --light: #FBF0E9;
+      --brown: #805050;
+      --beige: #D4C2A1;
+      --grey: #AD9C92;
+      --blue: rgba(56, 68, 84, 0.9)
+    }
+
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: #1a1a1a;
-      color: white;
+      background: var(--light);
+      color: var(--beige);
       scroll-behavior: smooth;
     }
+
     header {
       position: fixed;
       width: 100%;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.8);
+      background: var(--blue);
       padding: 10px 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       z-index: 100;
     }
+
     .header-container {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      max-width: 1200px; /* Ajuste la largeur du header */
+      max-width: 1200px;
       align-items: center;
     }
+
     .logo {
       display: flex;
       align-items: center;
     }
+
     .logo img {
       width: 40px;
       height: 40px;
-      border-radius: 50%; /* Rendre l'image circulaire */
+      border-radius: 60%;
       margin-right: 10px;
     }
+
     .logo h1 {
       font-size: 1.5rem;
       margin: 0;
-      color: #00ffcc;
+      color: var(--gold);
     }
+
     nav {
       display: flex;
       gap: 2rem;
     }
+
     nav a {
-      color: #00ffcc;
+      color: var(--gold);
       text-decoration: none;
       font-weight: 500;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: var(--beige);
     }
+
     section {
       padding: 100px 20px;
       min-height: 100vh;
     }
+
     section#home {
-      background: #0d0d0d;
+      background: var(--light);
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
     }
-    section#home h1 {
-      font-size: 3rem;
+
+    #home img {
+      width: 100%;
+      border-radius: 15px;
+      border: 2px solid var(--gold);
     }
-    section#home p {
-      font-size: 1.2rem;
+
+    #home .presentation {
+      background: var(--blue);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid var(--beige);
+      color: var(--light-gray);
     }
+
     footer {
-      background: #0d0d0d;
-      color: #00ffcc;
+      background: var(--light-gray);
+      color: var(--beige);
       padding: 20px;
       text-align: center;
     }
@@ -89,9 +117,8 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <!-- Remplacer "logo.png" par ton image de logo -->
         <img src="logo.png" alt="Logo">
-        <h1>Antoine Siebert</h1>
+        <h1>Antoine Siebert, Ph.D. | Engineer</h1>
       </div>
       <nav>
         <a href="#home">Home</a>
@@ -103,8 +130,15 @@
   </header>
 
   <section id="home">
-    <h1>Antoine Siebert</h1>
-    <p>Ingénieur en Télécommunications & IA Embarquée</p>
+    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px;">
+      <div style="flex: 1; max-width: 300px; text-align: center;">
+        <img src="photo.jpg" alt="Photo Antoine Siebert">
+      </div>
+      <div class="presentation" style="flex: 2; max-width: 600px;">
+        <h2 style="margin-top: 0;">Antoine Siebert</h2>
+        <p>Salut a tous</p>
+      </div>
+    </div>
   </section>
 
   <section id="education">
