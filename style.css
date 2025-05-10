@@ -1,4 +1,5 @@
 :root {
+--blue0: #3d4b49;
 --blue1: #5D726F;
 --blue2: #859393;
 --blue3: #B4BAB1;
@@ -11,7 +12,7 @@ body {
 margin: 0;
 font-family: 'Roboto', sans-serif;
 background: var(--blue5);
-color: var(--dark);
+color: var(--blue0);
 scroll-behavior: smooth;
 }
 
@@ -66,7 +67,7 @@ font-weight: 500;
 }
 
 nav a:hover {
-color: var(--dark);
+color: var(--blue0);
 }
 
 section {
@@ -103,8 +104,8 @@ border: 2px solid var(--blue4);
 background: var(--blue);
 padding: 20px;
 border-radius: 15px;
-border: 2px solid var(--dark);
-color: var(--dark);
+border: 2px solid var(--blue0);
+color: var(--blue0);
 }
 
 footer {
@@ -136,7 +137,7 @@ height: 100%;
 
 .presentation-header {
 margin-bottom: 0px;
-border-bottom: 2px solid var(--dark);
+border-bottom: 2px solid var(--blue0);
 padding-bottom: 0px;
 padding-top: 0px;
 }
@@ -144,7 +145,7 @@ padding-top: 0px;
 .presentation-header h3 {
 margin-top: 0;
 font-size: 1.5rem;
-color: var(--dark);
+color: var(--blue0);
 }
 
 .presentation-box p {
@@ -205,6 +206,7 @@ h1, h2, h3, h4 {
 .experience-content {
     padding-right: 40px;
     text-align: justify;
+    font-size: 0.875rem
 }
 
 .experience-place {
@@ -313,7 +315,7 @@ h1, h2, h3, h4 {
 }
 
 .publication-link {
-    color: var(--blue1);
+    color: var(--blue0);
     font-size: 0.875rem;
     display: flex;
     align-items: center;
