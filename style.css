@@ -325,3 +325,6 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
+.experience-icon .icon-graduation-cap{
+    padding-right: 4px;
+}
