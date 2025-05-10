@@ -79,7 +79,8 @@ margin-top: 100px;
 
 section#home {
 background: var(--blue5);
-margin-top: 175px;
+padding-top: 175px;
+margin-top: 0;
 display: flex;
 justify-content: center;
 align-items: center;
