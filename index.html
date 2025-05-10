@@ -1,69 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - IA embarquée</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-image: url('background.png');
-            background-size: cover;
-            background-position: center;
-            background-color: #0d0d0d;
-            color: #00ffcc;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .chip-container {
-            display: grid;
-            grid-template-columns: repeat(2, 200px);
-            gap: 20px;
-            padding: 20px;
-            border: 3px solid #00ffcc;
-            background: #222;
-            border-radius: 15px;
-            box-shadow: 0 0 15px #00ffcc;
-        }
-
-        .chip-zone {
-            padding: 20px;
-            text-align: center;
-            background: #111;
-            border: 2px solid #00ffcc;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .chip-zone:hover {
-            background: #00ffcc;
-            color: #111;
-            box-shadow: 0 0 10px #00ffcc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antoine Siebert – Télécoms & IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #1a1a1a;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      z-index: 100;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    header nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    section#home {
+      background: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    section#home h1 {
+      font-size: 3rem;
+    }
+    section#home p {
+      font-size: 1.2rem;
+    }
+    section#about, section#projects, section#contact {
+      background: #1a1a1a;
+      color: white;
+    }
+    section#about p, section#projects p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    footer {
+      background: #0d0d0d;
+      color: #00ffcc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="chip-container">
-        <div class="chip-zone" id="projects">Projets</div>
-        <div class="chip-zone" id="skills">Compétences</div>
-        <div class="chip-zone" id="cv">CV</div>
-        <div class="chip-zone" id="contact">Contact</div>
-    </div>
-    <script>
-        document.querySelectorAll('.chip-zone').forEach(zone => {
-            zone.addEventListener('click', () => {
-                alert(`Vous avez cliqué sur ${zone.innerText}`);
-            });
-        });
-    </script>
-</body>
 
+  <header>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div>
+      <h1>Antoine Siebert</h1>
+      <p>Ingénieur en Télécommunications & IA Embarquée</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Je suis un ingénieur passionné par les communications numériques et l'intelligence artificielle, avec une expertise dans le déploiement de modèles sur des plateformes embarquées et FPGA.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <p>Découvrez mes projets en communications numériques et IA embarquée :</p>
+    <ul>
+      <li><strong>GRU sur FPGA</strong> – Optimisation d'un RNN pour une exécution en temps réel sur FPGA.</li>
+      <li><strong>Estimation de canal semi-blind</strong> – Mise en œuvre d'un algorithme d'estimation de canal dans un environnement bruité.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Vous pouvez me contacter par email ou via mes profils professionnels :</p>
+    <p>Email : <a href="mailto:antoine@example.com" style="color: #00ffcc;">antoine@example.com</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com/in/antsiebert" target="_blank" style="color: #00ffcc;">antsiebert</a></p>
+    <p>GitHub : <a href="https://github.com/antsiebert" target="_blank" style="color: #00ffcc;">github.com/antsiebert</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Antoine Siebert</p>
+  </footer>
+
+</body>
 </html>
