@@ -198,6 +198,9 @@ h1, h2, h3, h4 {
     padding: 0px;
 }
 
+.expended{
+    padding-top: 60px;
+}
 
 .experience-content h4 {
     font-weight: 600;
