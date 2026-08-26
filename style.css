@@ -1,11 +1,11 @@
 :root {
---blue0: #3d4b49;
---blue1: #5D726F;
---blue2: #859393;
---blue3: #B4BAB1;
---blue4: #CED0C3;
---blue5: #DCDED6;
---dark:  #000000;
+--blue0: #2C3E50; /* Texte principal : un ardoise profond et lisible */
+--blue1: #546E7A; /* Éléments forts / En-têtes : un bleu-gris soutenu */
+--blue2: #78909C; /* Accents secondaires et métadonnées */
+--blue3: #B0BEC5; /* Bordures ou détails intermédiaires */
+--blue4: #ECEFF1; /* Fonds de cartes / Blocs : un blanc cassé teinté très doux */
+--blue5: #F4F6F7; /* Fond général de la page : un pastel ultra-lumineux et reposant */
+--dark:  #1A252F;
 }
 
 body {
@@ -67,13 +67,12 @@ font-weight: 500;
 }
 
 nav a:hover {
-color: var(--blue0);
+color: var(--blue5);
 }
 
 section {
 padding: 0px;
 margin-top: 100px;
-/* min-height: 50vh; */
 }
 
 
@@ -98,14 +97,14 @@ text-align: center;
 #home img {
 width: 100%;
 border-radius: 15px;
-border: 2px solid var(--blue4);
+border: 2px solid var(--blue3);
 }
 
 #home .presentation {
-background: var(--blue);
+background: var(--blue4);
 padding: 20px;
 border-radius: 15px;
-border: 2px solid var(--blue0);
+border: 2px solid var(--blue2);
 color: var(--blue0);
 }
 
@@ -128,17 +127,17 @@ max-width: 600px;
 }
 
 .presentation-box {
-background: var(--blue5);
+background: var(--blue4);
 padding-top: 0;
 padding: 40px;
 border-radius: 15px;
-box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 height: 100%;
 }
 
 .presentation-header {
 margin-bottom: 0px;
-border-bottom: 2px solid var(--blue0);
+border-bottom: 2px solid var(--blue2);
 padding-bottom: 0px;
 padding-top: 0px;
 }
@@ -182,12 +181,12 @@ h1, h2, h3, h4 {
 .section-divider {
     height: 4px;
     width: 80px;
-    background-color: var(--primary-color);
+    background-color: var(--blue2);
     margin-bottom: 2rem;
 }
 
 .section-description {
-    color: var(--text-light);
+    color: var(--blue1);
     font-size: 1.125rem;
 }
 
@@ -214,7 +213,7 @@ h1, h2, h3, h4 {
 }
 
 .experience-place {
-    color: var(--text-muted);
+    color: var(--blue2);
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 4px;
@@ -227,7 +226,7 @@ h1, h2, h3, h4 {
 }
 
 .experience-description {
-    color: var(--text-light);
+    color: var(--blue1);
     font-size: 0.9375rem;
     margin-bottom: 12px;
 }
@@ -260,7 +259,7 @@ h1, h2, h3, h4 {
     min-width: 300px;
     background-color: var(--blue4);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     padding: 24px;
 }
 
@@ -277,7 +276,7 @@ h1, h2, h3, h4 {
 }
 
 .list {
-    color: var(--text-light);
+    color: var(--blue1);
     font-size: 0.875rem;
     list-style-type: disc;
     padding-left: 20px;
@@ -292,7 +291,7 @@ h1, h2, h3, h4 {
 .publication-card {
     background-color: var(--blue4);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     padding: 24px;
     transition: transform 0.3s, box-shadow 0.3s;
     margin-bottom: 32px;
@@ -306,7 +305,7 @@ h1, h2, h3, h4 {
 }
 
 .publication-authors {
-    color: var(--text-light);
+    color: var(--blue1);
     font-size: 0.9375rem;
     margin-bottom: 8px;
 }
